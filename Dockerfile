@@ -34,7 +34,3 @@ ENV ANDROID_NDK_HOME=/home/root/android-ndk-r18b
 
 WORKDIR /home/root/TIC-80/build/android
 RUN sed -i 's/-DBUILD_PRO=Off/-DBUILD_PRO=On/g' app/build.gradle
-
-# $ docker build . -t tic-builder
-# $ mkdir build
-# $ docker run --rm -v `pwd`/build:/home/root/TIC-80/build/android/app/build tic-builder ./gradlew assembleRelease
